@@ -28,4 +28,14 @@ function calculate_member_fee($payment_method, $has_discount, $registration_date
   return round($fee, 2, PHP_ROUND_HALF_UP);
 }
 
+function calculate_current_member_fee( $registered, $member_type, $payment_method, $last_payment_year ) {
+	$current_year = getdate()["year"];
+	$fee = 0;
+	if($member_type and $payment_method and ( $current_year > $last_payment_year ) ) {
+		$has_discount = substr( $member_type, 0, 8) == "Ermäßigt";
+		$fee = calculate_member_fee( $payment_method, $has_discount, $registered );
+	}
+	return $fee;
+}
+
 ?>
