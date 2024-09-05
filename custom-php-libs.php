@@ -15,6 +15,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 require_once( plugin_dir_path( __FILE__ ) . 'php-iban/php-iban.php');
-require_once( plugin_dir_path( __FILE__ ) . 'calculate_member_fee.php');
+require_once( plugin_dir_path( __FILE__ ) . 'member_fee.php');
 
 ?>
