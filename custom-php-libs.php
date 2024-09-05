@@ -6,7 +6,7 @@
  * Requires PHP:      7.0
  * Author:            Neverhorst
  * Author URI:        https://github.com/Neverhorst
- * Version:           0.0.2
+ * Version:           0.0.3
  */
 
 // Exit if accessed directly.
